@@ -37,4 +37,18 @@ In the email header, the "From" field shows the sender's name and email address.
 The sender's email address in the provided email header is: **[bob@linode.com](mailto:bob@linode.com)**.
 ![image](https://github.com/user-attachments/assets/fc47d284-57d3-45a0-b0c3-de051ed76a51)
 
+WTISD{bob@linode.com}
+
+
+Forensic 2
+
+From the sender email address find out the domain registrar and domain creation date? (example: registrar, dd.mm.yyyy)
+
+
+
+Specific format for this flag is: WTISD{XXXXXXXXXX, Inc., DD.MM.YYYY}
+
+ANSWER:
+This was a common question for me. I searched for the sender's email domain using **ICANN Lookup**, where I found all the necessary details.
+![image](https://github.com/user-attachments/assets/32d17b5d-21e3-43ab-9600-3c3dd5849747)
 
