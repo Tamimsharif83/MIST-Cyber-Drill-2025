@@ -13,6 +13,7 @@ Unlock the ZIP file to begin your mission.
 Find out the sender email address. link (email.7z)
 
 ANSWER:
+
 First, this file was password-protected with 7-Zip. It took a long time to crack the password because, at the start of the contest, the file signature was missing. I was trying to crack it using a dictionary attack, but the password didn't match.
 
 I cloned this GitHub repository: https://github.com/Goron/7zip-crack and used it to perform a dictionary attack.
@@ -32,6 +33,7 @@ After extracting the 7-Zip file, I found a file named **email.txt** and started 
 The first question was quite easy: **"Find out the sender's email address?"**
 
 **Look for the "From" Field:**
+
 In the email header, the "From" field shows the sender's name and email address.
 
 The sender's email address in the provided email header is: **[bob@linode.com](mailto:bob@linode.com)**.
@@ -49,6 +51,7 @@ From the sender email address find out the domain registrar and domain creation 
 Specific format for this flag is: WTISD{XXXXXXXXXX, Inc., DD.MM.YYYY}
 
 ANSWER:
+
 This was a common question for me. I searched for the sender's email domain using **ICANN Lookup**, where I found all the necessary details.
 ![image](https://github.com/user-attachments/assets/32d17b5d-21e3-43ab-9600-3c3dd5849747)
 
@@ -63,10 +66,13 @@ Forensic 3
 What is the IP Address of the originating e-mail server 
 
 Flag format for this challenge is WTISD{flag}
+
 ANSWER:
+
 The Originating Email Server is the first server from which the email was sent, meaning the point where the email first entered the internet.
 
 Key Points for Analysis:
+
 The email header usually has multiple "Received" fields, each showing the servers the email passed through.
 
 The bottom "Received" field (or the first one) is the initial server.
@@ -74,6 +80,7 @@ The bottom "Received" field (or the first one) is the initial server.
 If this server shows a private IP (10.x.x.x, 192.168.x.x), we look for the next public IP in the next "Received" field.
 
 In This Case:
+
 I carefully checked the "Received" fields.
 
 The second "Received" field contained the public IP address (139.144.239.74).
@@ -81,13 +88,16 @@ The second "Received" field contained the public IP address (139.144.239.74).
 So, this is the IP of the originating email server.
 
 Final Answer:
+
 Flag: WTISD{139.144.239.74}
 
 Forensic 4
 From the above IP find out the ISP’s location? (example: city, region) link
 
 Flag format for this challenge is WTISD{flag}
+
 ANSWER:
+
 To see the ISP, location, and other details of the IP address (139.144.239.74), I went to an IP lookup website and searched for this IP https://www.iplocation.net/ip-lookup. 
 ![image](https://github.com/user-attachments/assets/f2887b73-1f64-4f59-baa9-ae1f235e86c8)
 
@@ -103,16 +113,21 @@ What is the domain name of the receiving server
 Flag format for this challenge is WTISD{flag}
 
 ANSWER:
+
 It was very easy because the answer was directly given in the file.
+
 ![image](https://github.com/user-attachments/assets/175c1352-f091-4a80-ae9f-15b7070b43a8)
+
 WTISD{mx.google.com}
 
 
 Forensic 7
+
 From the received header find out the reported time zone (example: Greenwich Mean Time) 
 Flag format for this challenge is WTISD{flag}
 
 ANSWER:
+
 The time here is 09:29:19 -0500, which is Eastern Standard Time (EST).
 
 ![image](https://github.com/user-attachments/assets/5e60d7f4-530a-4f59-8aa0-bda91e26f1c6)
@@ -120,11 +135,13 @@ The time here is 09:29:19 -0500, which is Eastern Standard Time (EST).
 WTISD{Eastern Standard Time}
 
 Forensic 8:
+
 What is the time zone of the final receiving e-mail server (example: Greenwich Mean Time) link
 
 Flag format for this challenge is WTISD{flag}
 
 ANSWER:
+
 The final receiving server is the one that directly delivered the email to the recipient (Gmail in this case).
 This is identified by the topmost "Received" field in the header.
 
@@ -139,6 +156,7 @@ What is the file name specified in the link of the body of the e-mail? (example:
 Flag format for this challenge is WTISD{flag}
 
 ANSWER:
+
 Towards the end of the text file, I noticed a filename that looked like a flag.
 ![image](https://github.com/user-attachments/assets/d4f81072-d5a9-437f-9a96-f6f1d32f3ffa)
 
@@ -150,6 +168,7 @@ What is written on the floating balloon
 Flag format for this challenge is WTISD{random string}
 
 ANSWER:
+
 Seeing the word "beloon" in the question, I thought there might be a picture. Soon, I noticed a line in the file:
 
 Content-Type: image/jpeg; name="Have a good day.jpg"
