@@ -168,4 +168,5 @@ I finally got my expected balloon image, and the text on the balloon was: "Get W
 	WTISD{Get Well Soon}
 
 Conclusion
+
 After successfully cracking the 7-Zip password and analyzing the email.txt file, I tackled all the forensics questions step by step. I used various techniques like WHOIS lookups, IP address analysis, and Base64 decoding to extract the required information. The entire challenge was both fun and rewarding, and I was able to find all the flags and complete the task with success!
