@@ -26,3 +26,15 @@ Still, even after trying many formats of the .7z file signature's magic value, I
 
 Two hours after the contest started, I finally succeeded. I tried using the .7zip magic value format from this Wikipedia https://en.wikipedia.org/wiki/List_of_file_signatures as the password, and it worked.
 ![image](https://github.com/user-attachments/assets/fb6bb9be-a23b-4c66-b4e8-454cc4f0e162)
+
+After extracting the 7-Zip file, I found a file named **email.txt** and started analyzing it as per the questions.
+
+The first question was quite easy: **"Find out the sender's email address?"**
+
+**Look for the "From" Field:**
+In the email header, the "From" field shows the sender's name and email address.
+
+The sender's email address in the provided email header is: **[bob@linode.com](mailto:bob@linode.com)**.
+![image](https://github.com/user-attachments/assets/fc47d284-57d3-45a0-b0c3-de051ed76a51)
+
+
