@@ -23,3 +23,36 @@ I opened **Autopsy using Kali Linux**. After creating a **new case**, providing 
 
 
 ![image](https://github.com/user-attachments/assets/564fdc71-d3a2-4113-b68c-b7a6bd700ec9)
+
+
+**flag:WTISD{FAT#@}**
+
+![image](https://github.com/user-attachments/assets/c1650203-70ad-4dd1-948d-2104a3ff7969)
+
+
+Sure! Here’s your paragraph in a smooth, clear English format:
+
+This task was quite straightforward. When I used the **file command**, it displayed all the sector information clearly, including the start sector at 2048, the total number of sectors as 260,096, and that it was an extended partition table (last). This made understanding the partition layout much easier.
+
+![image](https://github.com/user-attachments/assets/485d25fb-0019-458a-be6c-41fa6e196152)
+
+**flag:WTISD{2048, 260096}**
+
+![image](https://github.com/user-attachments/assets/cc6773e5-8ffb-463f-a006-707d23c76bdc)
+
+
+When I started the analysis using Autopsy’s file analysis option, I found a directory named **Documentation**
+
+![image](https://github.com/user-attachments/assets/a2fa976a-1696-49c8-b452-945da30d57fe)
+
+
+![image](https://github.com/user-attachments/assets/895df52d-072e-4374-add2-e8492c540b2d)
+
+. Inside that directory, I discovered a file called **La résistance électronique.pdf**, which was marked in red, indicating it was a **deleted file**. Along with the file, I also obtained various other information, including its size (672,623 bytes).
+
+**flag: WTISD{672,623 bytes}**
+
+
+![image](https://github.com/user-attachments/assets/a8c8c054-bf7e-4293-8b56-5f3b3241cb43)
+
+
