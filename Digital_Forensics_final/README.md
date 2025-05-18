@@ -55,4 +55,28 @@ When I started the analysis using Autopsy’s file analysis option, I found a di
 
 ![image](https://github.com/user-attachments/assets/a8c8c054-bf7e-4293-8b56-5f3b3241cb43)
 
+![image](https://github.com/user-attachments/assets/cde6e0a4-05d5-441e-8b2b-54881a19e61b)
+I navigated to the **Documentation directory** and found several PDF files. This made me suspect that there could be a **telephone number** among them. With this in mind, I downloaded a file named **tartes\_flambee\_a\_volonte\_francais\_2013.pdf**, but it was saved as **Autopsy**. When I checked the file type using the **file command**, it showed as a **data file**.
+
+![image](https://github.com/user-attachments/assets/df554f12-5681-4fe6-9e77-63e505ca9b55)
+
+
+However, since it was initially a PDF, I used the **pdftotext command** to extract the text content,
+
+
+![image](https://github.com/user-attachments/assets/5d64e51d-b9ed-4fe2-81c9-6a60ee15a478)
+
+
+which was saved as **Autopsy.txt**. Upon reviewing the text, I noticed a pattern like **Tel: xxx xxx xxx**, which is typically a telephone number format. My assumption was further confirmed when I saw the phrase **"Au cœur de la Petite France"** within the text file.
+
+![image](https://github.com/user-attachments/assets/45c247b0-2251-4e56-87f6-48aa3fb5a72e)
+
+**flag: WTISD{0033388324513}**
+
+
+![image](https://github.com/user-attachments/assets/d246f0f8-137e-4a92-b8bf-defb647140be)
+
+
+
+
 
