@@ -123,11 +123,39 @@ I initially thought I needed an image to find this information. So, I navigated 
 
 ![image](https://github.com/user-attachments/assets/608a7bcf-4473-4dba-9a96-4ec3e9a500f8)
 
-After navigating to **C:/ /Files/**, I found a **deleted ODT file**. While viewing it in **ASCII string format**, I noticed the term **jpg**, which made me suspect that there might be some hidden information. So, I exported the ODT file, where I discovered a **cat image and a note**. The note, when translated to English, read: **"GIVE AUTONOMY BACK TO ALSACE OR WE WILL KILL THE CAT!!!"** Oh no, it was a threat!
+After navigating to **C:/ /Files/**, I found a **deleted ODT file**. While viewing it in **ASCII string format**, I noticed the term **jpg**, which made me suspect that there might be some hidden information.
 
-I immediately downloaded the **cat image** and began a **metadata analysis** using **ExifTool**. During this analysis, I found the **GPS Latitude and Longitude** of the location where the image was taken. After searching these coordinates on **Google Maps**, I identified a place. Upon zooming in, I saw a **town hall**, which became a crucial flag in this investigation.
+
+![image](https://github.com/user-attachments/assets/2ff0be4d-41ac-4967-8850-5742e897eb31)
+
+
+
+So, I exported the ODT file, where I discovered a **cat image and a note**. The note, when translated to English, read: **"GIVE AUTONOMY BACK TO ALSACE OR WE WILL KILL THE CAT!!!"** Oh no, it was a threat!
+
 
 
 ![image](https://github.com/user-attachments/assets/b5300a31-2644-4efd-883f-8d7ae026f5eb)
+
+
+![image](https://github.com/user-attachments/assets/ec09512c-2c7c-480d-bc48-b62198baf096)
+
+
+
+I immediately downloaded the **cat image** and began a **metadata analysis** using **ExifTool**. During this analysis, I found the **GPS Latitude and Longitude** of the location where the image was taken. 
+
+
+![image](https://github.com/user-attachments/assets/5022fee9-4e92-4637-aa2d-b911ed8e8183)
+
+
+
+After searching these coordinates on **Google Maps**, I identified a place. Upon zooming in, I saw a **town hall**, which became a crucial flag in this investigation.
+
+
+![image](https://github.com/user-attachments/assets/15424ef3-c497-4d46-9974-b3e061157c2f)
+
+
+**flag:WTISD{Mairie - salle polyvalente}**
+
+
 
 
