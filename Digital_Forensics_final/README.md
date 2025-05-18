@@ -77,6 +77,57 @@ which was saved as **Autopsy.txt**. Upon reviewing the text, I noticed a pattern
 ![image](https://github.com/user-attachments/assets/d246f0f8-137e-4a92-b8bf-defb647140be)
 
 
+In Autopsy, under the **Documentation directory**, there is a PDF file named **"Courba13-01.pdf"**. I displayed it in **ASCII string format**, 
 
+
+
+![image](https://github.com/user-attachments/assets/abf4c79e-3531-4344-ab42-95312bbff770)
+
+
+and after scrolling down, I could view the **PDF file's metadata**. Among the metadata, I found the **author/creator's name**, which was **Olivier**.
+
+
+![image](https://github.com/user-attachments/assets/79cd456d-a781-4be0-861d-cb8253f24c6f)
+
+**flag: WTISSD{Olivier}**
+
+![image](https://github.com/user-attachments/assets/910acfb5-75ab-4e29-9ec1-16d0cb273ef4)
+
+This question was quite easy for me, but due to the pressure of the contest, I completely forgot the simple solution. Instead, I spent over an hour manually searching for the hash in **Autopsy**, and although I found other hash files, I couldn’t locate the one I needed.
+
+![image](https://github.com/user-attachments/assets/613edc92-cd6c-4b93-b1d7-e484768f9372)
+
+
+Suddenly, I remembered that I regularly use **VirusTotal**, a tool that can identify a file name using its hash value. Within just a minute, the problem was solved.
+
+![image](https://github.com/user-attachments/assets/2ae8cad1-542e-4e0a-bc8f-16d00d03ba69)
+
+
+
+![image](https://github.com/user-attachments/assets/ecf1bda5-1adc-4f28-ae67-f39edf077a68)
+
+
+**flag:WTISD{magnify-clip.png}**
+
+
+![image](https://github.com/user-attachments/assets/6d2ce358-5b80-477d-b3be-80a1ea78f448)
+
+
+
+I initially thought I needed an image to find this information. So, I navigated to the path **/WebSites/ /L'autonomie de l'Alsace\_files/**, where I found several images, including **51489545tag-elsass-frei-jpg.jpg**. After viewing this image, I used **Google Image Search** (Google Scanner) and quickly identified the **place name**.
+
+![image](https://github.com/user-attachments/assets/f9230e8b-649f-4783-ae47-fc88e24ca74e)
+
+
+**flag: WTISD{WTISD{Alsace}}**
+
+![image](https://github.com/user-attachments/assets/608a7bcf-4473-4dba-9a96-4ec3e9a500f8)
+
+After navigating to **C:/ /Files/**, I found a **deleted ODT file**. While viewing it in **ASCII string format**, I noticed the term **jpg**, which made me suspect that there might be some hidden information. So, I exported the ODT file, where I discovered a **cat image and a note**. The note, when translated to English, read: **"GIVE AUTONOMY BACK TO ALSACE OR WE WILL KILL THE CAT!!!"** Oh no, it was a threat!
+
+I immediately downloaded the **cat image** and began a **metadata analysis** using **ExifTool**. During this analysis, I found the **GPS Latitude and Longitude** of the location where the image was taken. After searching these coordinates on **Google Maps**, I identified a place. Upon zooming in, I saw a **town hall**, which became a crucial flag in this investigation.
+
+
+![image](https://github.com/user-attachments/assets/b5300a31-2644-4efd-883f-8d7ae026f5eb)
 
 
