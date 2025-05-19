@@ -25,12 +25,11 @@ I opened **Autopsy using Kali Linux**. After creating a **new case**, providing 
 ![image](https://github.com/user-attachments/assets/564fdc71-d3a2-4113-b68c-b7a6bd700ec9)
 
 
-**flag:WTISD{FAT#@}**
+**flag:WTISD{FAT32}**
 
 ![image](https://github.com/user-attachments/assets/c1650203-70ad-4dd1-948d-2104a3ff7969)
 
 
-Sure! Here’s your paragraph in a smooth, clear English format:
 
 This task was quite straightforward. When I used the **file command**, it displayed all the sector information clearly, including the start sector at 2048, the total number of sectors as 260,096, and that it was an extended partition table (last). This made understanding the partition layout much easier.
 
@@ -56,6 +55,7 @@ When I started the analysis using Autopsy’s file analysis option, I found a di
 ![image](https://github.com/user-attachments/assets/a8c8c054-bf7e-4293-8b56-5f3b3241cb43)
 
 ![image](https://github.com/user-attachments/assets/cde6e0a4-05d5-441e-8b2b-54881a19e61b)
+
 I navigated to the **Documentation directory** and found several PDF files. This made me suspect that there could be a **telephone number** among them. With this in mind, I downloaded a file named **tartes\_flambee\_a\_volonte\_francais\_2013.pdf**, but it was saved as **Autopsy**. When I checked the file type using the **file command**, it showed as a **data file**.
 
 ![image](https://github.com/user-attachments/assets/df554f12-5681-4fe6-9e77-63e505ca9b55)
@@ -119,7 +119,7 @@ I initially thought I needed an image to find this information. So, I navigated 
 ![image](https://github.com/user-attachments/assets/f9230e8b-649f-4783-ae47-fc88e24ca74e)
 
 
-**flag: WTISD{WTISD{Alsace}}**
+**flag: WTISD{Alsace}**
 
 ![image](https://github.com/user-attachments/assets/608a7bcf-4473-4dba-9a96-4ec3e9a500f8)
 
